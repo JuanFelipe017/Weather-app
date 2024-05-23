@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private URL createURL(String city) {
-        String apiKey = "@string/api_key"; //
-        String baseUrl = "@string/web_service_url";
+        String apiKey = "5bef98e07398bd4536d83ec130d285f6"; //
+        String baseUrl = "https://api.openweathermap.org/data/2.5/forecast?q=";
 
         try {
             String urlString = baseUrl + URLEncoder.encode(city, "UTF-8") + "&units=metric&cnt=16&appid=" + apiKey;

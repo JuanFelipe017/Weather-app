@@ -37,13 +37,15 @@
             app:boxStrokeColor="@color/light_green"
             app:hintTextColor="@color/light_green"
             style="@style/CustomTextInputStyle">
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/locationEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_location_foreground"
                 android:drawablePadding="8dp"
                 android:hint="Enter city (e.g., Boston, MA, US)"
-                android:textColorHint="@color/light_green"/>
+                android:textColorHint="@color/light_green" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 

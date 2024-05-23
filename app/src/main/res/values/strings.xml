@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">WebServices</string>
     <string name="api_key">5bef98e07398bd4536d83ec130d285f6</string>
-    <string name="web_service_url">https://api.openweathermap.org/data/2.5/forecast?q=</string>
+    <string name="web_service_url">https://api.openweathermap.org/data/2.5/forecast?q=  </string>
     <string name="invalid_url">Invalid URL</string>
     <string name="weather_condition_image">A graphical representation of the weather conditions</string>
     <string name="high_temp">High: %s</string>

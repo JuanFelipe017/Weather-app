@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="dark_purple">#521C98 </color>
+    <color name="light_purple">#F1EBFD</color>
+    <color name="light_green">#8BC34A</color>
+    <style name="CustomTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/light_green</item>
+    </style>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/bienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold_italic"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textseleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione una ciudad para obtener información del clima"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location_txt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/light_green"
+            app:hintTextColor="@color/light_green"
+            style="@style/CustomTextInputStyle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_location_foreground"
+                android:drawablePadding="8dp"
+                android:hint="Enter city (e.g., Boston, MA, US)"
+                android:textColorHint="@color/light_green"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="111dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@drawable/ic_search_foreground"
+        app:backgroundTint="@color/light_green"/>
+
+    <ListView
+        android:id="@+id/weatherListView"
+        android:layout_width="364dp"
+        android:layout_height="571dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_square_foreground" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
